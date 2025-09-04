@@ -8,7 +8,7 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            padding: 50px;
+            padding: 20px;
             background-color: #f5f5f5;
         }
         h1 {
@@ -42,7 +42,7 @@
             }
         }
         .tech-section {
-            margin-top: 50px;
+            margin-top: 30px;
             text-align: left;
             background: #fff;
             padding: 20px;
@@ -66,20 +66,14 @@
             padding: 10px;
             border-radius: 6px;
             font-family: monospace;
-            white-space: pre-wrap;       /* 保留換行與縮排 */
-            word-break: break-word;      /* 長路徑自動換行 */
-            overflow-x: auto;            /* 桌機可橫向滑動 */
+            white-space: pre-wrap;      /* 保留換行與縮排 */
+            word-break: break-all;      /* 強制長文字換行 */
+            overflow-x: auto;           /* 桌機橫向可滑動 */
             margin-top: 10px;
-        }
-        @media (max-width: 600px) {
-            .env-code {
-                font-size: 14px;         /* 手機字體稍小 */
-            }
         }
         #video-container {
             display: none;
             margin-top: 20px;
-            text-align: center;
         }
         #video-description {
             display: none;

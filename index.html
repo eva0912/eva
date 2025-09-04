@@ -66,12 +66,20 @@
             padding: 10px;
             border-radius: 6px;
             font-family: monospace;
-            white-space: pre-wrap;
+            white-space: pre-wrap;       /* 保留換行與縮排 */
+            word-break: break-word;      /* 長路徑自動換行 */
+            overflow-x: auto;            /* 桌機可橫向滑動 */
             margin-top: 10px;
+        }
+        @media (max-width: 600px) {
+            .env-code {
+                font-size: 14px;         /* 手機字體稍小 */
+            }
         }
         #video-container {
             display: none;
             margin-top: 20px;
+            text-align: center;
         }
         #video-description {
             display: none;
@@ -118,7 +126,7 @@ FILE_NAME='frontlog.txt'
                 權限管理自動化測試說明：
                 <button class="video-btn" onclick="showVideo()">觀看影片</button>
                 <div id="video-container">
-                    <video width="640" controls>
+                    <video width="100%" controls>
                         <source src="https://github.com/eva0912/eva/raw/main/permission_management.mp4" type="video/mp4">
                         您的瀏覽器不支援影片播放。
                     </video>
